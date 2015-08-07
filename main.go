@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 
@@ -28,5 +29,5 @@ func main() {
 	http.Handle("/static/", http.StripPrefix("/static/", staticFilesHandler))
 
 	log.Println("Listening...")
-	http.ListenAndServe(":1337", nil)
+	http.ListenAndServe(fmt.Sprintf(":%d", config.Port), nil)
 }
