@@ -1,0 +1,10 @@
+{
+	"ImportPath": "github.com/ab22/visithonduras",
+	"GoVersion": "go1.4.2",
+	"Deps": [
+		{
+			"ImportPath": "github.com/ab22/env",
+			"Rev": "2fcb2ea0ccf0f5e926555936b47e2a34f4a49589"
+		}
+	]
+}
